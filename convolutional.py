@@ -110,7 +110,7 @@ class ConvolutionalLayer(Layer):
                 self.kernels, self.biases, self.stride, self.zero_padding
             )
             output_maps = output_maps.reshape(1, *output_maps.shape)
-            if current_output is None:
+            if current_output is None:n
                 current_output = output_maps
             else:
                 current_output = np.vstack((
